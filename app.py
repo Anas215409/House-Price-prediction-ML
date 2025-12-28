@@ -34,7 +34,7 @@ final_value = scaler.transform([all_value])
 
 model = RandomForestRegressor()
 model.fit(X,y)
-house_price = model.predict(final_value)[0][0]
+house_price = model.predict(final_value)[0]
 
 with st.spinner('predicting house price'):
   time.sleep(1)
@@ -42,6 +42,7 @@ msg = f'''House Price is: ${house_price*100000}'''
 st.success(msg)
 
 st.markdown('''**Design and Developed by: Anas**''')
+
 
 
 
