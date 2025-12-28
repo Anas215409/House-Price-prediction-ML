@@ -30,7 +30,7 @@ for i in X:
 scaler = StandardScaler()
 scaled_X = scaler.fit_transform(X)
 
-final_value = scaller.transform([all_value])
+final_value = scaler.transform([all_value])
 
 model = RandomForestRegressor()
 model.fit(X,y)
@@ -39,6 +39,7 @@ house_price = model.predict(final_value)
 with st.spinner('predicting house price'):
   time.sleep(3)
 st.write(house_price)
+
 
 
 
