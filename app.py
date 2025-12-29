@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestRegressor
 
 st.title('🏠House Price prediction using ML')
 
-st.image('https://media.tenor.com/se3KzWldM8EAAAAM/house-work.gif')
+st.image('https://i.pinimg.com/originals/ec/d3/b6/ecd3b6b355ab6f67c9679c42f585d817.gif')
 
 df = pd.read_csv('house_data.csv')
 
@@ -46,6 +46,7 @@ msg = f'''House Price is: $ {round(house_price*100000,2)}'''
 st.success(msg)
 
 st.markdown('''**Design and Developed by: Anas**''')
+
 
 
 
