@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestRegressor
 
 st.title('🏠House Price prediction using ML')
 
-st.image('https://i.pinimg.com/originals/ec/d3/b6/ecd3b6b355ab6f67c9679c42f585d817.gif')
+st.image('https://gifdb.com/images/high/house-chimney-smoke-remote-village-dleyyit082j1gsbv.gif')
 
 df = pd.read_csv('house_data.csv')
 
@@ -17,7 +17,7 @@ X = df.iloc[:,:-3]
 y = df.iloc[:,-1]
 
 st.sidebar.title('🏠Select house features')
-st.sidebar.image('https://i.pinimg.com/originals/ec/d3/b6/ecd3b6b355ab6f67c9679c42f585d817.gif')
+st.sidebar.image('https://gifdb.com/images/high/house-chimney-smoke-remote-village-dleyyit082j1gsbv.gif')
 all_value = []
 for i in X:
   min_value = int(X[i].min())
@@ -46,6 +46,7 @@ msg = f'''House Price is: $ {round(house_price*100000,2)}'''
 st.success(msg)
 
 st.markdown('''**Design and Developed by: Anas**''')
+
 
 
 
